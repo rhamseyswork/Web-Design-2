@@ -1,0 +1,26 @@
+form1_Idea_Widget.txt
+
+Title form widget:Bookstore Survey
+
+    First name:{input:box} Last name: {input:box}
+
+    ciry:i{input:box}
+
+    state:{input:box}
+
+    Zip:{input:box, pattern}
+
+    E-mail address:{input:box, type:email}
+
+    <hr>
+
+    Have you purchased books in campus bookstore?{radio: yes, no}
+
+    In Which bookstore do you usaullu shop?{selections control: Amie's Books, }
+
+    Have you ever purchased books on the Internet?{radio: yes, no}
+
+    Have does shopping on the Internet Compare to shipping in a campus bookstore:
+    {textarea scroll}
+    
+    {button: Submit, Rest}

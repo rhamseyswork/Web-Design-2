@@ -1,0 +1,30 @@
+npm install body-parser /* use to import the app.js - I want more explanation here */
+html{
+    width: 100%;
+}
+body {
+    padding: 0px 50px;
+    margin-top: -20px;
+    background-color: red;
+}
+#surveyBookStoreWidget{
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+}
+
+#surveyBookStore {
+    text-align: center; /* Add this line to center the text */
+    display: inline-block;
+    background-color: white;
+
+}
+
+.heading-Title {
+    padding-top: 2px;
+    padding-bottom: 10px;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    background-color: grey;
+}

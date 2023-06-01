@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+/*
+CIS123-40386 (ONL) Web Page Design 2
+   Week 17
+   Assignment 6a
+   
+   Author: Rhamseys Garcia
+   Date:   05/19/2023
+*/
+
+.car {
+    position: absolute;
+    top: 50%;
+    left: -100px;
+    /* Initial position outside the viewport */
+    width: 100px;
+    height: 50px;
+    background-color: #ff0000;
+    animation: carAnimation 24s infinite;
+}
+
+/* Ideally id use Sass */
+@keyframes carAnimation {
+    0% {
+        -webkit-transform: translateX(-100px);
+        /* Initial position outside the viewport */
+    }
+
+    10% {
+        -webkit-transform: translateX(0px);
+        /* Stop 1 */
+    }
+
+    20% {
+        -webkit-transform: translateX(200px);
+        /* Stop 2 */
+    }
+
+    30% {
+        -webkit-transform: translateX(400px);
+        /* Stop 3 */
+    }
+
+    40% {
+        -webkit-transform: translateX(600px);
+        /* Stop 4 */
+    }
+
+    50% {
+        -webkit-transform: translateX(800px);
+        /* Stop 5 */
+    }
+
+    60% {
+        -webkit-transform: translateX(1000px);
+        /* Stop 6 */
+    }
+
+    70% {
+        -webkit-transform: translateX(1200px);
+        /* Stop 7 */
+    }
+
+    80% {
+        -webkit-transform: translateX(1400px);
+        /* Stop 7 */
+    }
+
+    90% {
+        -webkit-transform: translateX(1600px);
+        /* Stop 7 */
+    }
+
+    100% {
+        -webkit-transform: translateX(1800px);
+        /* Stop 7 */
+    }
+}

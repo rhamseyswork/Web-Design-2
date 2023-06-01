@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+/*
+   Assignement 2a
+   
+   Filename: stylesheet_layout.css
+
+*/
+
+#metric-conversions-table, #seasons-table {
+    border: 1px solid #000000; 
+    width: 65%; 
+    border-spacing: 5px;
+    width: 100%;
+    background-color:blanchedalmond;
+}
+
+#seasons-table {
+    font-weight: 600;
+}
+
+#metric-conversions-table td, #metric-conversions-table th, #seasons-table td, #seasons-table th {
+    border: 1px solid #000000; 
+}
+
+.metric_title, .metric_metrics {
+    color: greenyellow;
+    justify-content: center;
+    text-align: center;
+}
+
+.metric_title{
+    padding: 10px;
+    font-size: 3em;
+}
+
+.table_image { 
+    text-align: center;
+}
+
+.metric_metrics{
+    width: 10%;
+}
+
+#metric-conversions-table tr td:first-child {
+    text-align: left;
+  }
+
+
+  
+#metric-conversions-table tr td:last-child {
+    text-align: right;
+  }
+  tr td{
+    padding: 10px;;
+  }
+
+  .seasons_warm{ 
+    background-color: pink!important;
+  }
+
+  .seasons_title {
+    color: black !important;
+    font-size: 1em !important;
+  }

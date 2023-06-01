@@ -1,0 +1,7 @@
+New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 6
+   Coding Challenge 2
+   
+   Author:  Rhamseys Garcia  
+   Date:   05/01/2023  
+   Filename: code6-2_table.css

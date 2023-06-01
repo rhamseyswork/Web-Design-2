@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--CIS129-40815 (ONL) Web Page Design 2
+        Week 14
+        Assignment form 2
+        Web Page Design 2
+        Author: Rhamseys Garcia
+        Date:   05/08/2023
+
+        Filenamex: form2.htm
+    -->
+    <meta charset="utf-8" name="keywords" content="from, " />
+    <title>Assignment 4 Form2</title>
+    <link href="/CSS/stylesheet.css" rel="stylesheet" /> <!-- adds the sytle sheet and the disguine make up  -->
+    <script src="/JS/showRadioSelectBlock.js"></script><!--- showRadioSelectBlock function improt-->
+
+</head>
+
+<body>
+
+    <div class="heading-Title">
+
+        <h1>Penelope's Music House &#169; Survey</h1>
+
+        <p>Please complete the survey and click Submit when finished</p>
+
+    </div>
+
+    <div id="surveyMusicHouseWidget">
+
+        <form id="surveyMusicHouse" action="mailto:rgarcia@student.cccd.edu" method="post" enctype="text/plain">
+            <!-- Can email: method="post" action="mailto:pbarvarz@occ.cccd.edu" or action="/your-server-endpoint" method"POST/GET"-->
+
+            <fieldset>
+
+                <br>
+
+                <!-- type text box -->
+                <label for="first-name">First name:</label>
+                <input type="text" id="first-name" name="last-name" required>
+
+                <label for="last-name">Last name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+
+                <!-- type email box -->
+                <label for="email">E-mail adress:</label>
+                <input type="email" id="email" name="email" name="email"><!--E-mail is a type="email"-->
+
+                <br>
+                <br>
+
+                <!-- type Radio -->
+                <label for="campus-Bookstore">Do you take music lessons?</label>
+                <input type="radio" id="yes" name="campus-Bookstore" value="yes"><!--Radio Option:yes-->
+                <input type="radio" id="no" name="campus-Bookstore" value="no"><!--Radio Option:no-->
+
+                <br>
+
+                <!-- type checkboc -->
+                <label for="instrumentPlayed">What instrument(s) do you play?</label>
+                <input type="checkbox" id="piano" name="instruments[]" value="piano">
+                <label for="piano">Piano</label>
+
+                <input type="checkbox" id="violin" name="instruments[]" value="violin">
+                <label for="violin">Violin</label>
+
+                <input type="checkbox" id="cello" name="instruments[]" value="cello">
+                <label for="cello">Cello</label>
+
+                <input type="checkbox" id="drums" name="instruments[]" value="drums">
+                <label for="drums">Drums</label>
+
+                <input type="checkbox" id="opera" name="instruments[]" value="opera">
+                <label for="opera">Opera</label>
+
+                <input type="checkbox" id="ethnic" name="instruments[]" value="ethnic">
+                <label for="ethnic">Ethnic</label>
+
+                <!-- type number -->
+                <div>
+                    <label for="timepratice">How often a week do you practice?</label>
+                    <fieldset style="display:inline-flex; height:50px">
+                        <select id="praticetime" name="timepratice" size="3" multiple>
+                            <option value="30 min a week">30 min a week</option>
+                            <option value="30 min a day">30 min a day</option>
+                            <option value="one">one hour a week</option>
+                    </fieldset>
+                    </select>
+                </div>
+
+                <br>
+
+                <!-- type radio -->
+                <label for="comparison">What other instruments would you like to learn?</label>
+                <br>
+                <textarea id="comparison" name="comparison" rows="5" cols="50" style="overflow-y: scroll;"></textarea>
+
+
+            </fieldset>
+
+            <br>
+
+            <!-- type submit/reset buttons -->
+            <div id="submitButtons">
+                <input type="submit" value="Submit" onclick="showBlock('thank-You-Input', true)">
+                <input type="reset" value="Reset" onclick="showBlock('thank-You-Input', false)">
+            </div>
+
+            <p id="thank-You-Input" style="display: none; ">Thank you for input.</p>
+
+        </form>
+
+    </div>
+
+    <header>
+        <h1> </h1>
+    </header>
+
+</body>
+
+</html>

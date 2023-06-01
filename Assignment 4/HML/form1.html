@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--CIS129-40815 (ONL) Web Page Design 2
+        Week 14
+        Assignment form 1
+        Web Page Design 2
+        Author: Rhamseys Garcia
+        Date:   05/08/2023
+
+        Filenamex: form1.htm
+    -->
+    <meta charset="utf-8" name="keywords" content="from, " />
+    <title>Assignment 4 Form1</title>
+    <link href="/CSS/stylesheet.css" rel="stylesheet" /> <!-- adds the sytle sheet and the disguine make up  -->
+    <script src="/JS/showRadioSelectBlock.js"></script><!--- showRadioSelectBlock function improt-->
+
+</head>
+
+<body>
+    <div id="surveyBookStoreWidget">
+
+        <form id="surveyBookStore" action="" method="post" enctype="text/plain">
+            <!-- Can email: method="post" action="mailto:pbarvarz@occ.cccd.edu" or action="/your-server-endpoint" method"POST/GET"-->
+
+            <fieldset>
+
+                <label for="survey-title">
+                    <h2>Bookstore Survey</h2>
+                </label>
+
+                <br>
+                <br>
+                <hr>
+
+                <!-- type text box -->
+                <label for="first-name">First name:</label>
+                <input type="text" id="first-name" name="last-name" required>
+
+                <label for="last-name">Last name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+
+                <br>
+
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city">
+
+                <br>
+
+                <label for="state">State:</label> <!--list all possible state-->
+                <input type="text" id="state" name="state">
+
+                <br>
+
+                <!-- type Zip box -->
+                <label for="Zip">Zip</label>
+                <input type="text" id="zip" name="zip" pattern="^\d{5}$" required><!--zip patten="/d{5}$"-->
+
+                <br>
+
+                <!-- type email box -->
+                <label for="email">E-mail adress:</label>
+                <input type="email" id="email" name="email"><!--E-mail is a type="email"-->
+
+                <br>
+                <hr>
+                <br>
+                <br>
+
+                <!-- type radio naming=onclick="for/name="campus-..."-->
+                <label for="campus-BookStore"> Have you purchased books in campus bookstore?</label>
+                <input type="radio" id="yes" name="campus-Bookstore" value="yes"
+                    onclick="showRadioSelectBlock('BookStore', true)"><!--Radio Option:yes-->
+                <input type="radio" id="no" name="campus-Bookstore" value="no"
+                    onclick="showRadioSelectBlock('BookStore', false)"><!--Radio Option:no-->
+
+                <br>
+                <br>
+
+                <!-- start:disable:if(yes) -->
+                <label for="BookStore">Have you purchased books in campus bookstore?</label>
+                <!-- onclick="for/name="campus-..." if(yes){more in depth topic="Bookstore"}"-->
+                <select id="BookStore" name="BookStore" disabled>
+                    <option value="Amie's Books">Amie's Books</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <br>
+                <br>
+
+                <!-- type radio -->
+                <label for="internet-Bookstore">Have you ever purchased books on the Internet?</label>
+                <input type="radio" id="yes" name="internet-Bookstore" value="yes"><!--Radio Option:yes-->
+                <input type="radio" id="no" name="internet-Bookstore" value="no"><!--Radio Option:no-->
+
+                <br>
+                <br>
+
+                <!-- type radio -->
+                <label for="comparison">Have does shopping on the Internet Compare to shipping in a campus
+                    bookstore:</label>
+                <br>
+                <br>
+                <textarea id="comparison" name="comparison" rows="5" cols="50" style="overflow-y: scroll;"></textarea>
+
+                <br>
+
+                <!-- type submit/reset buttons -->
+                <div id="submitButtons">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+
+            </fieldset>
+        </form>
+
+    </div>
+
+    <header>
+        <h1> </h1>
+    </header>
+
+</body>
+
+</html>

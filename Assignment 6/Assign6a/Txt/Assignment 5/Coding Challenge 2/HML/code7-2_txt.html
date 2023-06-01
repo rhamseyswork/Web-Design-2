@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <!--
+      CIS123-40386 (ONL) Web Page Design 2
+      New Perspectives on HTML5 and CSS3, 8th Edition
+      Tutorial 7
+      Coding Challenge 2
+      Week 15
+      Assignment 5
+   
+      Author: Rhamseys Garcia
+      Date:   4/24/2023
+   -->
+   <meta charset="utf-8">
+   <title>Coding Challenge 7-2</title>
+   <link href="../CSS/code7-2_forms.css" rel="stylesheet" />
+   <!-- adds the sytle sheet and the disguine make up  -->
+</head>
+
+<body>
+
+   <form id="satisifiedForm" action="" method="post" enctype="text/plain">
+
+   <legend><h1>Survey Questions</h1></legend>
+
+   <hr/><!--This is just visually pleasing to me not required can remove if issues occur-->
+   
+   <ol type="1">
+
+         <fieldset>
+            <li>
+               <legend>How satisfied were you with the conference workshops?</lengend>
+                  <ol type="a">
+                     <li>
+                        <input type="radio" id="q1a" name="q1" value="verySatisfied">
+                        <label for="q1a">Very Satisfied</label>
+                     </li>
+                     <li>
+                        <input type="radio" id="q1b" name="q1" value="Satisfied">
+                        <label for="q1b">Satisfied</label>
+                     </li>
+                     <li>
+                        <input type="radio" id="q1c" name="q1" value="Dissatisfied">
+                        <label for="q1c">Dissatisfied</label>
+                     </li>
+                     <li>
+                        <input type="radio" id="q1d" name="q1" value="veryDissatisfied">
+                        <label for="q1d">Very Dissatisfied</label>
+                     </li>
+                  </ol>
+            </li>
+         </fieldset>
+
+         <fieldset>
+            <li>
+               <legend>How satisfied were you with the conference speakers?</legend>
+               <ol type="a">
+                  <li>
+                     <input type="radio" id="q2a" name="q2" value="verySatisfied">
+                     <label for="q2a">Very Satisfied</label>
+                  </li>
+                  <li>
+                     <input type="radio" id="q2b" name="q2" value="satisfied">
+                     <label for="q2b">Satisfied</label>
+                  </li>
+                  <li>
+                     <input type="radio" id="q2c" name="q2" value="dissatisfied">
+                     <label for="q2c">Dissatisfied</label>
+                  </li>
+                  <li>
+                     <input type="radio" id="q2d" name="q2" value="veryDissatisfied">
+                     <label for="q2d">Very Dissatisfied</label>
+                  </li>
+               </ol>
+            </li>
+         </fieldset>
+
+         <fieldset>
+            <li>
+               <legend>How satisfied were you with the conference facilities?</legend> 
+               <ol type="a">
+                  <li>
+                     <input type="radio" id="q3a" name="q3" value="verySatisfied">
+                     <label for="q3a">Very Satisfied</label>
+                  </li>
+                  <li>
+                     <input type="radio" id="q3b" name="q3" value="satisfied">
+                     <label for="q3b">Satisfied</label>
+                  </li>
+                  <li>
+                     <input type="radio" id="q3c" name="q3" value="dissatisfied">
+                     <label for="q3c">Dissatisfied</label>
+                  </li>
+                  <li>
+                     <input type="radio" id="q3d" name="q3" value="veryDissatisfied">
+                     <label for="q3d">Very Dissatisfied</label>
+                  </li>
+               </ol>
+            </li>
+            </fieldset>
+
+            <fieldset>
+            <li>
+               <lable for="rangeBox">How likely are you to attend next year's conference?</lable>
+               <div id="newRow">
+                  very unlikely
+                  <input type="range" id="rangeBox" name="conferenceAttendance" min="0" max="10" value="5" step="1">
+                  very likely
+               </div>
+            </li>
+         </fieldset>
+
+         <fieldset>
+            <li>
+               <label for="commBox">Provide any suggestions for the next conference:</label>
+               <textarea id="commBox" name="suggestions" placeholder="enter your suggestions here" ></textarea>
+            </li>
+         </fieldset>
+      </form>
+   </ol>
+
+
+
+</body>
+
+</html>
